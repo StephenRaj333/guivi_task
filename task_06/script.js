@@ -5,8 +5,7 @@ const xml = new XMLHttpRequest();
 xml.open("GET","https://restcountries.com/v3.1/all");
 xml.send();
 xml.onload = function () {  
-const xmlData = JSON.parse(xml.response);       
-console.log(xmlData);
+const xmlData = JSON.parse(xml.response);  
 
 
 // A.)  Get all the countries from Asia continent /region using Filter function 
