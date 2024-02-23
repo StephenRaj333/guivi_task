@@ -1,0 +1,100 @@
+* {
+    font-family: "Roboto", sans-serif;   
+}
+
+
+.web-container{
+    padding: 30px 0;    
+    margin: 15px;       
+    border: 1px solid;
+    border-color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: row;    
+}
+
+.main-row{
+    border: 1px solid;
+    border-color: #000;
+    align-items: center;
+    padding: 40px 0;    
+    align-items: flex-start;        
+}
+
+.img-div{
+    margin: auto;
+    width: 100%;
+    text-align: center; 
+    border: 1px solid;
+    border-color: #000; 
+    width: 62%;     
+    padding: 30px 0;
+}
+
+.img-div img {
+    border-radius: 50%;
+}
+
+.form-group{    
+    display: flex;  
+    align-items: center;    
+    justify-content: center;
+}   
+
+.form-group label{
+    white-space: nowrap;    
+    text-align: right;  
+    min-width: 166px;   
+}
+
+
+.dualBtn{
+    margin-top: 30px;   
+    margin-left: 8%;    
+    gap: 20px;      
+}
+
+
+@media screen and  (min-width: 520px) and (max-width: 1024px) {  
+    
+    .img-div{
+        width: 80%;
+        margin-bottom: 40px;
+        height: 400px;
+    }
+    .img-div img {
+        height: 350px;
+    }
+    .form-group{
+        justify-content: center;
+    }
+}
+
+@media screen and  (min-width: 991px) and (max-width: 1024px) {   
+    .img-div{
+        width: 80%;
+        margin-bottom: 40px;
+        height: fit-content;
+    }
+    .img-div img {
+        height: 100%;
+    }
+}
+
+@media screen and  (max-width: 576px) {     
+    .form-group label{
+        text-align: left;
+        min-width: unset;
+        margin-left: 1px;   
+    }
+    .img-div{
+        width: 75%;
+        height: 340px;  
+        margin-bottom: 30px;    
+    }
+    
+    .img-div img {
+        height: 100%;
+        width: 74%;
+    }
+}
