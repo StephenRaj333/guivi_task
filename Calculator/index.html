@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            max-width: 300px;
+            margin: auto;   
+        }
+
+        .calculator {
+            max-width: 300px;
+            margin: auto;
+            background: lightgray;
+            border-radius: 8px;
+            border: 2px solid;  
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input {
+            width: -webkit-fill-available;
+            padding: 10px 20px;
+            margin: 20px;
+        }
+
+        .row button {
+            width: 75px;
+            height: 50px;
+            margin: 10px;
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .row .button:last-child {
+            color: blue;
+            font-size: 25px;
+        }
+
+        .row:last-child .button:last-child {
+            background: #2196f3;
+            color: white;
+            border-radius: 4px;
+            width: 62%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<script src="./script.js"></script> 
+</body>
+
+</html>
