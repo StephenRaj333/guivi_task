@@ -17,7 +17,7 @@ Container.appendChild(HeadingText);
 
 let Timer = 1000;      
 
-function CallBackHell() {   
+
   setTimeout(() => {
     TimerText.textContent = 10;
     setTimeout(() => {
@@ -52,11 +52,8 @@ function CallBackHell() {
       }, Timer);
     }, Timer);
   }, 0); 
-}
 
-document.addEventListener("DOMContentLoaded",() => {
-    CallBackHell();
-})
+
 
 
 
