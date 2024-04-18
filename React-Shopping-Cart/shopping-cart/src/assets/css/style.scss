@@ -233,6 +233,12 @@ $menu-transition-speed: 0.2s;
 $menu-max-height: 260px;            
 $menu-icon-color: #333;     
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 99;    
+}
+
 .header {
   background-color: $header-bg;
   box-shadow: $header-shadow;
