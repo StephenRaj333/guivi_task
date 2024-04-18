@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Nav from "../src/Components/Nav";
 import Header from "../src/Components/Header";
 import Banner from "../src/Components/Banner";
 import Card from "../src/Components/Card";
@@ -100,50 +99,15 @@ const cardDetails = [
 
 const App = () => {
   const [cartCount, setCartCount] = useState(0);
-  const [view, setView] = useState("1440px");
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setView("1440px");
-      } else if (window.innerWidth < 768 && window.innerWidth > 450) {
-        setView("768px");
-      } else {
-        setView("450px");
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const updateCartCount = (increment) => {
     setCartCount(cartCount + increment);
   };
 
-  const resizeDesktop = () => {
-    setView("1440px");
-  };
-
-  const resizeTab = () => {
-    setView("768px");
-  };
-
-  const resizeMobile = () => {
-    setView("450px");
-  };
 
   return (
     <>
       <div className="container-fluid p-0">
-        <Nav
-          resizeDesktop={resizeDesktop}
-          resizeTab={resizeTab}
-          resizeMobile={resizeMobile}
-        />
         <Header count={cartCount} />
         <Banner
           title={"Shop in style"}
