@@ -1,0 +1,202 @@
+
+
+
+header {    
+    display: flex;  
+    flex-direction: row;    
+    align-items: center;    
+    width: 100%;    
+    justify-content: space-between;      
+    padding: 10px;
+    max-width: 90%;
+    margin: auto;   
+}   
+
+header .left-sec h3 {   
+    font-size: 20px;            
+}   
+
+header .right-sec button {
+    text-align: right;
+}
+
+/* banner */
+
+.banner-sec {
+    height: 80%;
+    background: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 75vh;
+    position: relative;
+}
+
+.banner-content{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-sec .form-group {
+    max-width: 500px;
+    display: flex;
+    gap: 2rem;
+    margin-top : 30px;
+    margin: auto;
+}
+
+.Card-wrapper{
+    padding: 100px 0;
+    background: rgb(248 249 250);  
+}
+.Card-wrapper  h3{
+    width: 65%;
+    margin: auto;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+
+.Card-wrapper svg { 
+    width: 80px;
+    height: 80px;
+    color: navy;    
+}
+
+.Card-wrapper  p{
+    width: 65%;
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+/* artivle */
+article{
+    position: relative;
+    width: 100%;
+}
+
+article .sec {
+    width: 50%;
+    float: left;
+}
+
+article .sec img {
+    width: -webkit-fill-available;  
+}
+
+article .sec-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;   
+}   
+
+article .sec-content h3{    
+    font-size: 2rem;
+}
+article .sec-content p {
+    font-size: 1.25rem; 
+    font-weight: 200;
+}
+
+/* profile */
+.overallProfile{
+    background:rgb(248 249 250);
+    padding: 100px 0;
+}
+
+.proInfo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+}
+
+.proInfo-wrapper img {
+    max-width: 12rem;
+    border-radius: 50%;
+}
+
+.proInfo-content {
+    width: min-content;
+    margin: auto;   
+    text-align: center; 
+}
+.proInfo-content .proName {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.proInfo-content .proDesc {
+    width: 100%;
+    margin: auto;
+}
+
+/* footer */
+footer{
+    max-width: 90%;
+    margin: auto;
+    padding: 30px;
+}
+footer .sec  ul{
+    padding-left: 0;
+}
+footer .sec:last-child {
+    text-align: right;
+}
+.social-icons i svg{
+    width: 30px;
+    height: 30px;
+    color: #0a58ca;
+}
+
+footer .sec  ul li {
+    text-decoration: underline;     
+}
+
+
+/* mobile */    
+@media screen and (max-width: 768px) {   
+    .Card-wrapper{
+        flex-direction: column; 
+        gap: 5rem;
+    }
+    .article-wrapper article{
+        flex-direction: column-reverse !important;
+    }
+    article .sec{
+        width: 100%;
+        padding-top: 60px;
+    }
+    .proInfo-wrapper{
+        flex-direction: column !important;
+        gap: 5rem;
+    }
+    .banner-content{
+        width: 95%;
+    }
+    .banner-content h1 {    
+        font-size: 24px;
+    }
+    footer {
+        flex-direction: column !important;
+    }
+    footer .sec {
+        width: 100% !important;
+    }
+    footer .sec{
+        text-align: center;
+        font-size: 14px;
+    }
+    .sec .social-icons {
+        justify-content: center !important;
+    }   
+
+}
