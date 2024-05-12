@@ -115,7 +115,7 @@ function App() {
               <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} required />
             </div>
 
-            <button type="submit" style={{textAlign:"center"}}>{selectedUser ? 'Update' : 'Add'}</button>
+            <button type="submit" className='btn' style={{textAlign:"center"}}>{selectedUser ? 'Update' : 'Add'}</button>
           </form>
         </div>
       </div>
