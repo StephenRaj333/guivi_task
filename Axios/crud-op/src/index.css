@@ -1,0 +1,61 @@
+
+
+.container{
+  display: flex;
+  align-items: flex-start;
+}
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+th {
+  text-align: left; 
+}
+
+th,td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+
+.modal-container .modal {
+  position: absolute;   
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid black;  
+}
+
+.form-group {
+  padding: 10px;
+  text-align: left;
+}
+
+.form-group input ,button,select {
+  padding: 5px 10px;
+  width: 244px; 
+}
+
+.form-group {
+  display: block;
+}
+button {
+  text-align: center;
+  cursor: pointer;  
+}
+table button {
+  width: 70px;  
+}
+
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;   
+}
